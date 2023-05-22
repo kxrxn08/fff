@@ -1,0 +1,22 @@
+<!-- write a json object which contains array of three objects.Each object contains 2 properties , name and age.
+ Sort an array values by age in descending order.Print name with age in terminal as per the sorted age. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        var student=[{"name":"karan","age":20},{"name":"karan2","age":25},{"name":"karan3","age":2}]
+        var student = [{"name":"karan","age":20},{"name":"karan2","age":25},{"name":"karan3","age":2}];
+
+student.sort(function(a, b) {
+  return a.age - b.age;
+});
+console.log(student);
+</script>
+ </body>
+ </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  // get JSON object values using for loop
+const l1 = {
+    "Contacts": ["email@gmail.com", "email2@emp1.com"]
+}
+console.log("")
+for (const i of l1.Contacts) {
+    console.log(i)
+}
+
+
+// Get the JSON object values using for loop and make html table to display these values.
+const sub =
+{
+    "FSD": [
+        {
+            "Topic":"HTML",
+            "Course":"Beginner",
+            "Content":["tags","table","form"]
+        },
+        {
+            "Topic":"css",
+            "Course":"Beginner",
+            "Content":["Class","id","Properties"]
+        }
+    ]
+}
+
+// a=document.getElementsByClassName("th")
+// a[0].innerHTML="H"
+j=0
+var temp="<table border='2px solid red'>"
+console.log(sub.FSD[0])
+// for (let i in sub.FSD[0]) {
+//     console.log(i)
+//     // a[j].innerHTML=i
+//     temp+=i
+//     j+=1
+// }
+
+    temp+="<tr>"
+    for (j in sub.FSD[0]) {
+        temp+="<th>"+j+"</th>"
+    }
+    temp+="</tr>"
+    for (let i in sub.FSD) {
+        temp+="<tr>"
+    console.log(i)
+    // temp+=
+    for(let j in sub.FSD[i])
+    {
+        temp+="<td>"+sub.FSD[i][j]+"</td>";
+    }
+    temp+="</tr>"
+    // a[j].innerHTML=i
+    // temp+=i
+    // const newLocal = j += 1;
+}
+temp+="</table>"
+document.write(temp)
+    </script>
+</body>
+</html>

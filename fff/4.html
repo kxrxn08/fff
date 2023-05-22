@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" style="color:blue">
+        hello
+    </p>
+    <!-- write a js code to display hello with increasing font size with interval of 1 second in blue color when font size reaches to 50px it should stop the process -->
+    <script>
+        a=10;
+        function incr(){
+            if(a>49){
+                document.getElementById("demo").style.fontSize=a+"px"
+            }
+            else{
+                document.getElementById("demo").style.fontSize=a+"px"
+                a+=1
+                console.log(a)
+            }
+            // document.getElementById("demo").innerHTML+=
+        }
+        setInterval(()=>{incr()},100)
+    </script>
+</body>
+</html>

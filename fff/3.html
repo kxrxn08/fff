@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // const message=()=>{
+            // console.log("hello")/
+            // document.getElementById("demo").innerHTML="hello"
+        // }
+        // setTimeout(()=>{
+            // console.log("hello")/
+            // document.getElementById("demo").innerHTML="hello"
+        // },3000);
+        // function display(sum){
+        //     document.getElementById("demo").innerHTML=sum;
+        // }
+        // function mycal(num1,num2,mycallback){
+        //     sum=num1+num2;
+        //     mycallback(sum)
+        // }
+        // mycal(20,40,display);
+
+
+        const message=(a,b)=>{
+    count=1;
+    if(count==1){
+        console.log(a+b);
+    }
+    else{
+        a+=1
+        b+=1
+        console.log(a+b)
+    }
+    count+=1
+}
+setInterval(message(10,20),1000)
+    </script>
+</body>
+</html>
